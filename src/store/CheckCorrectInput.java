@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+//перевірка правильності зчитування даних
 public class CheckCorrectInput {
     private static final String message = "Дані прийнято успішно";
 
