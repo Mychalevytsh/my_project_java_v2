@@ -10,7 +10,7 @@ class Menu {
         Scanner s = new Scanner(System.in);
         int action = 0;
         while (action != 7) {
-            Menu.Menu();
+            Menu.menu();
             action = s.nextInt();
             if (action == 1) {
                 addGood(goodArrayList);
@@ -29,7 +29,7 @@ class Menu {
         }
     }
 
-    private static void Menu() {
+    private static void menu() {
         System.out.println("\n       Виберіть яку дію потрібно виконати");
         System.out.println(" +---+------------------------------------------+");
         System.out.println(" | 1 | додати новий товар                       |");
