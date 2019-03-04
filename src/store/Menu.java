@@ -12,20 +12,31 @@ class Menu {
         while (action != 7) {
             Menu.menu();
             action = s.nextInt();
-            if (action == 1) {
-                addGood(goodArrayList);
-            } else if (action == 2) {
-                print(goodArrayList);
-            } else if (action == 3) {
-                goodsEditor(goodArrayList);
-            } else if (action == 4) {
-                readWriteFileInfo(goodArrayList);
-            } else if (action == 5) {
-                delete(goodArrayList);
-            } else if (action == 6) {
-                Printer.printTable(goodArrayList);
-            } else if (action == 7) System.out.println("Ви закінчили роботу з програмою! До Побачення!");
-            else System.out.println("Неправильний ввід. Виберіть цифру від 1 до 6 \nабо 7 для виходу");
+            switch (action){
+                case 1: addGood(goodArrayList);break;
+                case 2: print(goodArrayList); break;
+                case 3: goodsEditor(goodArrayList); break;
+                case 4: readWriteFileInfo(goodArrayList); break;
+                case 5: delete(goodArrayList); break;
+                case 6: Printer.printTable(goodArrayList); break;
+                case 7: System.out.println("Ви закінчили роботу з програмою! До Побачення!"); break;
+                default: System.out.println("Неправильний ввід. Виберіть цифру від 1 до 6 \nабо 7 для виходу");
+
+            }
+//            if (action == 1) {
+//                addGood(goodArrayList);
+//            } else if (action == 2) {
+//                print(goodArrayList);
+//            } else if (action == 3) {
+//                goodsEditor(goodArrayList);
+//            } else if (action == 4) {
+//                readWriteFileInfo(goodArrayList);
+//            } else if (action == 5) {
+//                delete(goodArrayList);
+//            } else if (action == 6) {
+//                Printer.printTable(goodArrayList);
+//            } else if (action == 7) System.out.println("Ви закінчили роботу з програмою! До Побачення!");
+//            else System.out.println("Неправильний ввід. Виберіть цифру від 1 до 6 \nабо 7 для виходу");
         }
     }
 
